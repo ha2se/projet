@@ -8,16 +8,20 @@
   --switchcircle-bg:#87b22d;
   --switchcircle-pos:0.22rem;
   --info-color:var(--body-color);
+  --table-col:#6e6f71;
+  --title-col:#87b22d;
 }
 :root[data-theme="light"]
 {
   --body-color:white;
   --text-color:black;
   --header-color:#8D8741;
-  --footer-color:#565d55;
+  --footer-color:#5c550f;
   --switchcircle-bg:rgb(111, 106, 106);
   --switchcircle-pos:3.3rem;
   --info-color:#8D8741;
+  --table-col:#cdcbb3;
+  --title-col:#5c550f;
 }
 body{
     display: flex;
@@ -277,4 +281,12 @@ video
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+table{
+  padding: 10px;
+}
+tr:nth-child(even) {background-color: var(--table-col);}
+th {
+  background-color:var(--title-col);
+  color: white;
 }
